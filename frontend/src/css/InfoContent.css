@@ -1,0 +1,102 @@
+:root {
+    --width60: calc(60vw);
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, var(--width60)/2);
+    padding-top: 200px;
+    gap: 30px;
+}
+
+.show__effect {
+    animation: showEffect ease 5s;
+}
+
+.hide__effect {
+    animation: hideEffect ease 2s;
+    animation-fill-mode: forwards;
+}
+
+.info-container .graduation-container:hover {
+    box-shadow: 0 0 44px rgba(128, 53, 53, 0.5);
+}
+
+.info-container .experience-container:hover {
+    box-shadow: 0 0 44px rgba(128, 53, 53, 0.5);
+}
+
+.graduation-container img {
+    width: 33px;
+    height: 26px;
+}
+
+.experience-container img {
+    width: 33px;
+    height: 26px;
+}
+
+.graduation-container {
+    border-left: 0.4px dot-dash salmon;
+    grid-column: 1;
+}
+
+.experience-container {
+    border-left: 2px dot-dot-dash salmon;
+    grid-column: 2;
+}
+
+.graduation-container, .experience-container {
+    justify-self: center;
+}
+
+.graduation, .experience {
+    margin-left: 30px;
+}
+
+.graduation, .experience {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main-col1, .main-col2 {
+
+    margin-right: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+@keyframes showEffect {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 100
+    }
+}
+
+@keyframes hideEffect {
+    0% {
+        opacity: 100
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@media (max-width: 1400px) {
+    .info-container {
+
+        margin-left: auto;
+
+    }
+}
+
+@media (max-width: 1700px) {
+    .info-container {
+
+        margin-left: auto;
+
+    }
+}

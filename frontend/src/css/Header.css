@@ -1,0 +1,125 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #1f1e1c;
+    left: 0;
+    border-bottom: 1px solid #2c2b27;
+    transition: transform 0.5s ease;
+    box-shadow: 0 2px 4px #312d2d;
+    z-index: 9999;
+}
+
+.main-header a img {
+    z-index: 1;
+}
+
+.main-header img {
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: auto;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.menu__header {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.menu__header nav ul {
+    gap: 20px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a h2 {
+    color: #a6a6a6;
+    position: relative;
+}
+
+a {
+    text-decoration-color: #bdbd08;
+    text-decoration: none;
+}
+
+a h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2a678a;
+    opacity: 0;
+    transition: width 0.6s ease, opacity 0.2s ease;
+}
+
+a h2:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+ol, ul {
+    box-sizing: border-box;
+}
+
+.burger-button {
+    border: none;
+    display: none;
+}
+
+.menu__header.show {
+    display: flex;
+}
+
+.menu.show {
+    display: flex;
+}
+
+
+@media (max-width: 1200px) {
+    .menu__header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu.show h2 {
+        margin-right: 10px;
+    }
+
+    .menu.show {
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        right: 50px;
+        border: 1px solid white;
+        border-radius: 30px 0 0 30px;
+        background-color: black;
+        box-shadow: 0 0 30px #2e87a2;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .menu__header nav ul {
+        display: none;
+    }
+
+    .burger-button {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        width: 44px;
+    }
+
+}

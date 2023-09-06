@@ -1,0 +1,61 @@
+.contacts, .social-contacts {
+    padding-bottom: 50px;
+
+}
+.contacts {
+    padding-top: 70px;
+}
+
+.social-info, .social-contacts .social-media {
+    text-align: center;
+    font-size: 19px;
+
+}
+.social-info {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.email-form {
+    padding: 50px;
+    border-top: 1px solid #382c49;
+    border-bottom: 1px solid #382c49;
+}
+
+
+
+.form-contacts {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+form input, form textarea {
+    width: 700px;
+
+}
+
+.email-form label,
+.email-form input,
+.email-form textarea {
+    margin-bottom: 40px;
+}
+.email-form input,
+.email-form textarea {
+    box-shadow: 0 0 20px  #276f9d;
+}
+
+
+@media screen and (max-width: 870px) {
+    form input, form textarea {
+        width: 500px;
+
+    }
+}
+@media screen and (max-width: 610px) {
+    form input, form textarea {
+        width: 350px;
+
+    }
+}
