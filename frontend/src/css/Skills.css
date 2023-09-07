@@ -1,0 +1,64 @@
+.skills__level-fill {
+    background: linear-gradient(to right, #0d2c3d, #00d5ff);
+    height: 100%;
+    opacity: 1;
+    visibility: inherit;
+    transform: translate(0px);
+    translate: none;
+    rotate: none;
+    scale: none;
+    transition: width 0.5s ease;
+}
+
+.skills__level-fill.reveal-in.reveal-in-left {
+    transform: scale(2);
+    border: 1px solid #00d5ff;
+
+}
+
+.skills__levels h2 {
+    font-family: Liberation Mono sans-serif;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(to right, #b1cbcb, #0c8acb, #889cb7);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    font-size: 33px;
+    color: transparent;
+
+    /*box-shadow: 0 50px 141px #2969b4;*/
+}
+
+.skills__levels .skills-wrapper {
+    text-align: center;
+}
+
+.skills__level-digit {
+    position: relative;
+    z-index: 1;
+}
+
+.skills__level-scale {
+    position: relative;
+    height: 10px;
+    background-color: #f5f5f5;
+}
+
+.skills__levels {
+    margin-top: 20px;
+
+}
+
+.skills__level {
+    margin: 50px 50px 50px 0;
+
+}
+
+.skills__level-fill .reveal-in .reveal-in-left {
+    opacity: 1;
+    visibility: inherit;
+    transform: translate(0px);
+    translate: none;
+    rotate: none;
+    scale: none;
+}
