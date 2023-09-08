@@ -54,7 +54,7 @@
 
 }
 
-.skills__level-fill .reveal-in .reveal-in-left {
+.skills__level-fill.reveal-in.reveal-in-left {
     opacity: 1;
     visibility: inherit;
     transform: translate(0px);

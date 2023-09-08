@@ -4,7 +4,7 @@
 
 .info-container {
     display: grid;
-    grid-template-columns: repeat(2, var(--width60)/2);
+    grid-template-columns: 0.3fr 0.6fr;
     padding-top: 200px;
     gap: 30px;
 }
@@ -50,21 +50,23 @@
     justify-self: center;
 }
 
+.graduation{
+
+}
 .graduation, .experience {
+    text-align: center;
     margin-left: 30px;
+    font-size: 14px;
 }
 
-.graduation, .experience {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
 .main-col1, .main-col2 {
 
     margin-right: 30px;
     text-align: center;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 @keyframes showEffect {

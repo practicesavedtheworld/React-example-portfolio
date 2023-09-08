@@ -1,11 +1,15 @@
 import React, {useState, CSSProperties} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import "../css/Slider.css";
-import {EffectCoverflow, Pagination, Navigation} from 'swiper/modules';
+
+// @ts-ignore
+import { EffectCoverflow, Navigation, Pagination} from 'swiper/modules';
+
 import Modal from 'react-modal';
 import {LiaArrowAltCircleLeft, LiaArrowAltCircleRight} from "react-icons/lia";
 
@@ -23,6 +27,7 @@ interface StylesForModal {
     content: CSSProperties;
 }
 
+
 export default function Slider(): React.JSX.Element {
     const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
     const [selectedImage, setSelectedImage] = useState<null | string>(null);
@@ -30,7 +35,7 @@ export default function Slider(): React.JSX.Element {
     const modalStyles: StylesForModal = {
         overlay: {
             backgroundColor: 'rgba(0, 0, 0, 1)',
-            zIndex: 9999,
+            zIndex: 9999
         },
         content: {
             position: 'absolute',
@@ -65,6 +70,7 @@ export default function Slider(): React.JSX.Element {
             </div>
 
             <Swiper
+                // @ts-ignore
                 effect={'coverflow'}
                 grabCursor={true}
                 centeredSlides={true}
@@ -84,6 +90,7 @@ export default function Slider(): React.JSX.Element {
                     clickable: true,
                 }}
                 modules={[EffectCoverflow, Pagination, Navigation]}
+
                 className="swiper_container"
                 speed={1222}
                 initialSlide={2}

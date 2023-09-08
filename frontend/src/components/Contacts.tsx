@@ -20,7 +20,6 @@ export default function Contacts(): React.JSX.Element {
                 </div>
             </div>
 
-            #TODO  Add request
             <div className="form-contacts">
                 <form className="email-form">
                     <label htmlFor="name">Your Name</label><br/>
