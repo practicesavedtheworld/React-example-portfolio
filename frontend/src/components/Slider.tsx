@@ -86,8 +86,8 @@ export default function Slider(): React.JSX.Element {
                 pagination={{el: '.swiper-pagination', clickable: true}}
                 navigation={{
                     nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                    clickable: true,
+                    prevEl: '.swiper-button-prev'
+
                 }}
                 modules={[EffectCoverflow, Pagination, Navigation]}
 

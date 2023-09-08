@@ -4,11 +4,20 @@
     justify-content: start;
     display: grid;
     grid-template-areas: "photo info";
-    grid-template-columns: minmax(500px, 0.6fr) auto;
+    grid-template-columns: minmax(450px, 500px) auto;
     border-radius: 25px;
-    gap: 84px;
+    gap: 54px;
     padding-top: 240px;
     margin: 80px auto 70px;
+}
+@media screen and (max-width: 1470px) {
+    .about {
+        grid-template-areas: "photo"
+                            "info";
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
 }
 .info {
     font-size: 20px;

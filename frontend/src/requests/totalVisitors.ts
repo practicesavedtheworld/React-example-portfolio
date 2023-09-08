@@ -1,5 +1,5 @@
 export const totalVisitors = async (): Promise<number> => {
-    const response = await fetch("https://localhost:8080/total_visitors", {
+    const response = await fetch("http://localhost:8000/total_visitors", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

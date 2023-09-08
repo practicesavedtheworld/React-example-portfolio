@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import About from "./components/About";
+import Info from "./components/Info";
+import Header from "./components/Header";
+import Slider from "./components/Slider";
+import Skills from "./components/Skills";
+import TechStack from "./components/TechStack";
+import Footer from "./components/Footer";
+import Contacts from "./components/Contacts";
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(): React.JSX.Element {
+    return (
+        <div>
+            <header>
+                <Header/>
+            </header>
+
+            <div className="info-box">
+                <div className="left-col"></div>
+                <About/>
+                <div className="right-col"></div>
+            </div>
+
+            <div className="info-box">
+                <div className="left-col"></div>
+                <Info/>
+                <div className="right-col"></div>
+            </div>
+            <Slider/>
+            <div className="info-box">
+                <div className="left-col"></div>
+                <Skills/>
+                <div className="right-col"></div>
+            </div>
+
+            <div className="info-box">
+                <div className="left-col"></div>
+                <TechStack/>
+                <div className="right-col"></div>
+            </div>
+            <Contacts/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

@@ -3,7 +3,7 @@ interface status {
 }
 
 export const newVisitor = async (): Promise<status> => {
-    const response: Response = await fetch("https://localhost:8000/new_visitor", {
+    const response: Response = await fetch("http://localhost:8000/new_visitor", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
