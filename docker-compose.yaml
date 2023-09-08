@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: frontend/
+    networks:
+      - portfolio_network
+    ports:
+      - "3000:3000"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6389:6379"
+    networks:
+      - portfolio_network
+
+  backend:
+    build:
+      context: backend/
+    networks:
+      - portfolio_network
+    ports:
+      - "8000:8000"
+    depends_on:
+      - frontend
+      - redis
+
+networks:
+  portfolio_network:
