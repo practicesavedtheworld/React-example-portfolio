@@ -5,6 +5,12 @@ Created while I getting to know react
 
 
 
+## Requirements
+
+- npm >= 9.8.1
+- python >= 3.11
+- docker >= 24.0.6
+
 ## Quick start
 
 ```sh 
